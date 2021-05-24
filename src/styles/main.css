@@ -34,8 +34,25 @@ header{
     color: white;
     text-decoration: none;
     margin-top: 10px;
-    
 }
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+ }
+  
+ .skip-link:focus {
+    top: 0;
+ }
 
 /*
  * Top level navigation
@@ -65,11 +82,14 @@ header{
 #menu-bar li{
     text-align: left;
     margin: 15px auto;
+    
 }
 .link {
+    display: inline-block;
     text-decoration: none;
     color: white;
-    
+    min-width: 44px;
+    min-height: 44px;
 }
 
 .link:hover{
@@ -79,6 +99,7 @@ header{
     display: block;
     cursor: pointer;
     font-size: 32px;
+    min-width: 44px;
     text-decoration: none;
     color: white;
     position: absolute;
@@ -168,8 +189,11 @@ header{
     opacity: 0.5;
 }
 .post-item__title a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
+    min-width: 44px;
+    min-height: 44px;
 }
 .post-item__description {
     margin-top: 16px;
@@ -218,9 +242,13 @@ footer {
     }
 
     #topnav .link {
+        
         margin-left: 3em;
         margin-bottom: 0;
+        min-width: 44px;
+        min-height: 44px;
     }
+    
    
     .navbar-toggle{
         display: none;
@@ -243,4 +271,10 @@ footer {
         column-gap: 10px; 
     }
     
+    .link {
+        margin-left: 3em;
+        margin-bottom: 0;
+        min-width: 44px;
+        min-height: 44px;
+    }
 }
