@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>MakanMana</title>
+    <meta name="theme-color" content="#db0000"/>
+    <link rel="apple-touch-icon" href="/icons/icon-mana-192px.png">
+    <link rel="icon" href="mana-favicon.png">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
 </head>
 <body>
-    <header class="header">
-        <a href="#maincontent" class="skip-link">Menuju ke konten</a>
-        <h4 class="logo">MakanMana?</h4>
-        <a href="#" class="navbar-toggle" id="navbar-toggle-menu">☰</a>
-        <nav class="navbar" id="topnav">
-            <ul class="main-nav" id="menu-bar">
-                <li><a href="/" class="link">Home</a></li>
-                <li><a href="#Favorite" class="link">Favorite</a></li>
-                <li><a href="https://www.linkedin.com/in/achmad-alghifari-72b8a7aa/" class="link">About Us</a></li>
+    <header class="app-bar">
+        <a href="#mainContent" class="skip-link">Menuju ke konten</a>
+        <div class="app-bar__menu">
+            <button id="hamburgerButton">☰</button>
+        </div>
+        <div class="app-bar__brand">
+            <h3>MakanMana?</h3>
+        </div>
+        <nav id="navigationDrawer" class="app-bar__navigation">
+            <ul>
+                <li><a href="#/restaurant-list">Home</a></li>
+                <li><a href="#/favorite">Favorite</a></li>
+                <li><a href="https://www.linkedin.com/in/achmad-alghifari-72b8a7aa/">About Us</a></li>
             </ul>
-            
         </nav>
-        
     </header>
-    
     <div class="hero">
         <div class="hero-box">
             <h1 class="hero-title">Lets Eat!</h1>
         </div>
     </div>
-    <main id="maincontent">
-        <section class="content">
-            <h2 style="text-align: center;">Explore Restaurant</h2>
-            <div id="posts"></div>
-        </section>
+    <main id="mainContent">
     </main>
     <footer>
        copyright &#169; 2021 | MakanMana?
     </footer>
-    
 </body>
 </html>
