@@ -51,8 +51,7 @@ const createRestaurantItemTemplate = (restaurant) => `
             </div>
         </div>
         <div class="restaurant-item__content">
-            <a class="content__title" href=${`/#/detail/${restaurant.id}`}>${restaurant.name}</a>
-            <br>
+            <h3 class="restaurant-item__title"><a class="content__title" href=${`/#/detail/${restaurant.id}`}>${restaurant.name}</a></h3>
             <span style="font-weight: bold;" ><i class="fa fa-map-marker" aria-hidden="true"></i> ${restaurant.city}</span>
             <p>${restaurant.description}</p>
         </div>

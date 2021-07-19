@@ -1,6 +1,5 @@
 var serviceWorkerOption = {
   "assets": [
-    "/5d982326781d6f8ea98b7c2d8f958fc5.jpg",
     "/bundle.js",
     "/mana-favicon.png",
     "/manifest.json",
@@ -12,7 +11,6 @@ var serviceWorkerOption = {
     "/icons/icon-mana-512px.png",
     "/icons/icon-mana-72px.png",
     "/icons/icon-mana-96px.png",
-    "/images/heros/hero-image_4.jpg",
     "/index.html"
   ]
 };
