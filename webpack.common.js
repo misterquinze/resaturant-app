@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const ServiceWorkerWebpackPlugin = require('serviceworker-webpack-plugin');
@@ -7,7 +8,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'src/scripts/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
   },
   module: {
     rules: [

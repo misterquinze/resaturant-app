@@ -1,5 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const { merge } = require('webpack-merge');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 const common = require('./webpack.common');
@@ -46,10 +46,6 @@ module.exports = merge(common, {
     },
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src/templates/index.html'),
-      filename: 'index.html',
-    }),
     new CopyWebpackPlugin({
       patterns: [
         {
