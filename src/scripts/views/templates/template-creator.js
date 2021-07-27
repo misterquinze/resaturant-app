@@ -23,19 +23,19 @@ const createRestaurantDetailTemplate = (restaurant) => `
         <div class="restaurant__menu">
             <div class="food__menu">
                 <h4>Food Menus</h4>
-                ${restaurant.menus.foods.map((food) => `
                 <ul> 
+                ${restaurant.menus.foods.map((food) => `
                     <li>${food.name}</li>
-                </ul>
                 `).join('')}
+                </ul>
             </div>
             <div class=drink__menu>
             <h4>Drink Menus</h4>
-                ${restaurant.menus.drinks.map((drink) => `
                 <ul> 
+                ${restaurant.menus.drinks.map((drink) => `
                     <li>${drink.name}</li>
-                </ul>
                 `).join('')}
+                </ul>
             </div>
         </div>
     </div>
@@ -63,8 +63,8 @@ const createCustomerReview = (restaurant) => `
     Customer Review</h3>
     ${restaurant.customerReviews.map((review) => `
     <div class="restaurant__review">
-        <h5 tabindex="0">${review.name}</h5>
-        <h6 tabindex="0" class="date-review">${review.date}</h6>
+        <h4 tabindex="0">${review.name}</h4>
+        <h5 tabindex="0" class="date-review">${review.date}</h5>
         <p tabindex="0">${review.review}</p>
     </div>
     `).join('')}
